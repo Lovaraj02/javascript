@@ -1,0 +1,33 @@
+function checkprime(n)
+    {
+     var count = 0;
+     for(var i=1;i<=n;i++)
+     {
+         if(n%i==0)
+         {
+             count = count+1;
+         }
+     }
+     if(count==2)
+     {
+         return "prime";
+     }
+     else{
+         return "not prime"
+     }
+    
+}
+function fun(n)
+{
+    while(true)
+    {
+        if(checkprime(n) == "prime"){
+            console.log(n);
+            break
+        }
+        else{
+            n = n-1;
+        }
+    }
+}
+fun(10);
